@@ -30,40 +30,11 @@ import "./Products.css";
 const Products = () => {
 
   /**
-   * Make API call to get the products list and store it to display the products
+   * Makes API call to get the products list and store it to display the products
    *
    * @returns { Array.<Product> }
    *      Array of objects with complete data on all available products
    *
-   * API endpoint - "GET /products"
-   *
-   * Example for successful response from backend:
-   * HTTP 200
-   * [
-   *      {
-   *          "name": "iPhone XR",
-   *          "category": "Phones",
-   *          "cost": 100,
-   *          "rating": 4,
-   *          "image": "https://i.imgur.com/lulqWzW.jpg",
-   *          "_id": "v4sLtEcMpzabRyfx"
-   *      },
-   *      {
-   *          "name": "Basketball",
-   *          "category": "Sports",
-   *          "cost": 100,
-   *          "rating": 5,
-   *          "image": "https://i.imgur.com/lulqWzW.jpg",
-   *          "_id": "upLK9JbQ4rMhTwt4"
-   *      }
-   * ]
-   *
-   * Example for failed response from backend:
-   * HTTP 500
-   * {
-   *      "success": false,
-   *      "message": "Something went wrong. Check the backend console for more details"
-   * }
    */
   const performAPICall = async () => {
   };
@@ -78,7 +49,6 @@ const Products = () => {
    * @returns { Array.<Product> }
    *      Array of objects with complete data on filtered set of products
    *
-   * API endpoint - "GET /products/search?value=<search-query>"
    *
    */
   const performSearch = async (text) => {
@@ -86,7 +56,7 @@ const Products = () => {
 
   /**
    * Definition for debounce handler
-   * With debounce, this is the function to be called whenever the user types text in the searchbar field
+   * This is the function to be called whenever the user types text in the searchbar field
    *
    * @param {{ target: { value: string } }} event
    *    JS event object emitted from the search input field
