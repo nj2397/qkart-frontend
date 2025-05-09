@@ -18,7 +18,6 @@ import "./Checkout.css";
 import Footer from "./Footer";
 import Header from "./Header";
 
-// Definition of Data Structures used
 /**
  * @typedef {Object} Product - Data on product available to buy
  *
@@ -167,28 +166,6 @@ const Checkout = () => {
 
   /**
    * Fetch list of addresses for a user
-   *
-   * API Endpoint - "GET /user/addresses"
-   *
-   * Example for successful response from backend:
-   * HTTP 200
-   * [
-   *      {
-   *          "_id": "",
-   *          "address": "Test address\n12th street, Mumbai"
-   *      },
-   *      {
-   *          "_id": "BW0jAAeDJmlZCF8i",
-   *          "address": "New address \nKolam lane, Chennai"
-   *      }
-   * ]
-   *
-   * Example for failed response from backend:
-   * HTTP 401
-   * {
-   *      "success": false,
-   *      "message": "Protected route, Oauth2 Bearer token not found"
-   * }
    */
   const getAddresses = async (token) => {
     if (!token) return;
@@ -224,28 +201,6 @@ const Checkout = () => {
    *
    * @returns { Array.<Address> }
    *    Latest list of addresses
-   *
-   * API Endpoint - "POST /user/addresses"
-   *
-   * Example for successful response from backend:
-   * HTTP 200
-   * [
-   *      {
-   *          "_id": "",
-   *          "address": "Test address\n12th street, Mumbai"
-   *      },
-   *      {
-   *          "_id": "BW0jAAeDJmlZCF8i",
-   *          "address": "New address \nKolam lane, Chennai"
-   *      }
-   * ]
-   *
-   * Example for failed response from backend:
-   * HTTP 401
-   * {
-   *      "success": false,
-   *      "message": "Protected route, Oauth2 Bearer token not found"
-   * }
    */
   const addAddress = async (token, newAddress) => {
     try {
@@ -275,28 +230,6 @@ const Checkout = () => {
    *
    * @returns { Array.<Address> }
    *    Latest list of addresses
-   *
-   * API Endpoint - "DELETE /user/addresses/:addressId"
-   *
-   * Example for successful response from backend:
-   * HTTP 200
-   * [
-   *      {
-   *          "_id": "",
-   *          "address": "Test address\n12th street, Mumbai"
-   *      },
-   *      {
-   *          "_id": "BW0jAAeDJmlZCF8i",
-   *          "address": "New address \nKolam lane, Chennai"
-   *      }
-   * ]
-   *
-   * Example for failed response from backend:
-   * HTTP 401
-   * {
-   *      "success": false,
-   *      "message": "Protected route, Oauth2 Bearer token not found"
-   * }
    */
   const deleteAddress = async (token, addressId) => {
     try {
@@ -318,7 +251,7 @@ const Checkout = () => {
   /**
    * Return if the request validation passed. If it fails, display appropriate warning message.
    *
-   * Validation checks - show warning message with given text if any of these validation fails
+   * Validation checks
    *
    *  1. Not enough balance available to checkout cart items
    *    "You do not have enough balance in your wallet for this purchase"
@@ -356,21 +289,6 @@ const Checkout = () => {
    *
    * @returns { Boolean }
    *    If checkout operation was successful
-   *
-   * API endpoint - "POST /cart/checkout"
-   *
-   * Example for successful response from backend:
-   * HTTP 200
-   * {
-   *  "success": true
-   * }
-   *
-   * Example for failed response from backend:
-   * HTTP 400
-   * {
-   *  "success": false,
-   *  "message": "Wallet balance not sufficient to place order"
-   * }
    *
    */
   const performCheckout = async (token, items, addresses) => {
