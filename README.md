@@ -19,7 +19,11 @@ QKart is an E-Commerce application offering a variety of products for customers 
 * Checkout selected products with an intended address
 
 ## Screenshots 
-![Dashboard_Interface](https://drive.google.com/uc?id=1bbvAvtNkQMnJDZApGdb4jf9KSeBvTV0T)
+![Dashboard_Interface_1](https://drive.google.com/uc?id=1mSgVyOUZbJAPWUtUu3UiRrtmKtxPqNw-)
+![Register_Interface](https://drive.google.com/uc?id=1R8VN7I4VcNNOn1gMBcn5yN77mjPs0Ojq)
+![Login_Interface](https://drive.google.com/uc?id=1KV1laPCZUcmOnzh_wQPx99vB0r0CDPSy)
+![Dashboard_Interface_2](https://drive.google.com/uc?id=1bbvAvtNkQMnJDZApGdb4jf9KSeBvTV0T)
+![Checkout_Interface](https://drive.google.com/uc?id=1PIAJv1TJMGNqD_5mWmG51a2iTjCGuaXt)
 
 ## Tech Stack
 * Frontend: React.js
