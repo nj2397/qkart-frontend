@@ -1,4 +1,4 @@
-# QKart
+# QKart - ECommerce application
 
 ## Table of Contents
 
@@ -6,13 +6,6 @@
 * [Key Features](#key-features)
 * [Screenshots](#screenshots)
 * [Tech Stack](#tech-stack)
-* [Getting Started](#getting-started)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
 
 
 ## Project Overview
@@ -29,4 +22,7 @@ QKart is an E-Commerce application offering a variety of products for customers 
 
 
 ## Tech Stack
-* Frontend: React
+* Frontend: React.js
+* Backend: Node.js, Express.js
+* Services: Netlify, Render
+  
